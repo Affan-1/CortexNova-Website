@@ -122,9 +122,15 @@ function Navbar() {
           <button
             type="button"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="group relative flex items-center"
+            className="group relative flex items-center gap-3"
             aria-label="CortexNova home"
           >
+            <img
+              src="/logo.png"
+              alt="CortexNova logo"
+              className="h-9 w-9 shrink-0 object-contain transition-transform duration-500 group-hover:scale-110 md:h-10 md:w-10"
+            />
+
             <span className="font-display text-lg font-semibold tracking-[-0.03em] text-cortex-white transition-colors duration-300 group-hover:text-cortex-blue md:text-xl">
               CORTEX
               <span className="text-cortex-blue">NOVA</span>
@@ -227,7 +233,11 @@ function Navbar() {
                 variants={mobileLinkVariants}
                 className="mb-8 flex items-center gap-4"
               >
-                <span className="h-px w-8 bg-cortex-blue" />
+                <img
+                  src="/logo.png"
+                  alt="CortexNova logo"
+                  className="h-7 w-7 object-contain"
+                />
 
                 <span className="cortex-label">Navigation</span>
               </motion.div>
@@ -288,3 +298,4 @@ function Navbar() {
 }
 
 export default Navbar;
+

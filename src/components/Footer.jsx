@@ -35,7 +35,7 @@ const footerLinks = [
 const socials = [
   { icon: Link2, label: "LinkedIn", href: "https://www.linkedin.com/company/cortexnova/?viewAsMember=true" },
   { icon: AtSign, label: "Twitter", href: "#" },
-  { icon: Code2, label: "GitHub", href: "#" },
+  { icon: Code2, label: "GitHub", href: "https://github.com/Affan-1/CortexNova-Website.git" },
 ];
 
 const Footer = () => {
